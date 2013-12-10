@@ -1,5 +1,5 @@
 subarch: amd64
-version_stamp: 13.0.zfs
+version_stamp: 20131205.zfs
 target: livecd-stage1
 rel_type: default
 profile: default/linux/amd64/13.0/no-multilib
