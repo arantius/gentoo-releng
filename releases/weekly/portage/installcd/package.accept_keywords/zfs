@@ -1,0 +1,10 @@
+# required by zfs (argument)
+=sys-fs/zfs-0.6.2-r3 ~amd64
+# required by sys-fs/zfs-0.6.2-r3
+# required by zfs (argument)
+=sys-fs/zfs-kmod-0.6.2-r3 ~amd64
+# required by sys-fs/zfs-kmod-0.6.2-r3
+# required by sys-fs/zfs-0.6.2-r3
+# required by zfs (argument)
+=sys-kernel/spl-0.6.2-r2 ~amd64
+
