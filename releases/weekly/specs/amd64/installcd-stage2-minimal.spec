@@ -1,19 +1,20 @@
 subarch: amd64
-version_stamp: latest
+version_stamp: 13.0.zfs
 target: livecd-stage2
 rel_type: default
 profile: default/linux/amd64/13.0/no-multilib
 snapshot: latest
-source_subpath: default/livecd-stage1-amd64-latest
+source_subpath: default/livecd-stage1-amd64-13.0.zfs
 portage_confdir: @REPO_DIR@/releases/weekly/portage/isos
 
 livecd/bootargs: dokeymap
 livecd/cdtar: /usr/lib/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
 livecd/fstype: squashfs
 livecd/gk_mainargs: --lvm --dmraid --mdadm --makeopts=-j8
-livecd/iso: install-amd64-minimal-latest.iso
+livecd/iso: install-amd64-minimal-13.0.zfs.iso
 livecd/type: gentoo-release-minimal
-livecd/volid: Gentoo Linux amd64 latest
+livecd/volid: Gentoo Linux amd64 13.0.zfs
+livecd/rcadd: sshd
 livecd/rcdel: keymaps|boot
 
 boot/kernel: gentoo
@@ -76,6 +77,8 @@ boot/kernel/gentoo/use:
 	usb
 
 boot/kernel/gentoo/packages:
+	=sys-kernel/spl-9999
+	=sys-fs/zfs-9999
 ### These need to be added for software speech.
 	app-accessibility/espeakup
 	media-libs/alsa-oss
