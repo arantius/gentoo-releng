@@ -73,6 +73,7 @@ boot/kernel/gentoo/use:
 	socks5
 	ssl
 	truetype
+	udev
 	unicode
 	usb
 

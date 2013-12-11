@@ -46,7 +46,6 @@ livecd/packages:
 	net-dialup/mingetty
 	net-dialup/pptpclient
 	net-dialup/rp-pppoe
-	net-fs/cifs-utils
 	net-fs/nfs-utils
 	net-irc/irssi
 	net-misc/dhcpcd
