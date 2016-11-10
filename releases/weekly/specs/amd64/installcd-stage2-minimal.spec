@@ -1,5 +1,5 @@
 subarch: amd64
-version_stamp: 20131205.zfs
+version_stamp: 20161109.zfs
 target: livecd-stage2
 rel_type: default
 profile: default/linux/amd64/13.0/no-multilib
@@ -11,9 +11,9 @@ livecd/bootargs: dokeymap
 livecd/cdtar: /usr/lib/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
 livecd/fstype: squashfs
 livecd/gk_mainargs: --lvm --dmraid --mdadm --makeopts=-j8
-livecd/iso: install-amd64-minimal-20131205.zfs.iso
+livecd/iso: install-amd64-minimal-20161109.zfs.iso
 livecd/type: gentoo-release-minimal
-livecd/volid: Gentoo Linux amd64 20131205.zfs
+livecd/volid: Gentoo Linux amd64 20161109.zfs
 livecd/rcadd: sshd
 livecd/rcdel: keymaps|boot
 
