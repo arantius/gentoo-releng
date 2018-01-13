@@ -2,9 +2,10 @@ subarch: x86
 version_stamp: latest
 target: livecd-stage1
 rel_type: default
-profile: default/linux/x86/13.0
+profile: default/linux/x86/17.0
 snapshot: latest
 source_subpath: default/stage3-i486-latest
+compression_mode: pixz_x
 portage_confdir: @REPO_DIR@/releases/weekly/portage/isos
 
 livecd/use:
@@ -34,8 +35,8 @@ livecd/packages:
 	app-arch/unzip
 	app-crypt/gnupg
 	app-editors/mg
+	app-editors/nano
 	app-misc/screen
-	app-misc/vlock
 	app-portage/mirrorselect
 	app-text/wgetpaste
 	media-gfx/fbgrab
@@ -64,7 +65,6 @@ livecd/packages:
 	net-wireless/rfkill
 	net-wireless/wireless-tools
 	net-wireless/wpa_supplicant
-	sys-apps/apmd
 	sys-apps/busybox
 	sys-apps/dmidecode
 	sys-apps/ethtool

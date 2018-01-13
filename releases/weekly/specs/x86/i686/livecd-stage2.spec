@@ -2,18 +2,18 @@ subarch: i686
 version_stamp: latest
 target: livecd-stage2
 rel_type: default
-profile: default/linux/x86/13.0/desktop
+profile: default/linux/x86/17.0/desktop
 snapshot: latest
 source_subpath: default/livecd-stage1-i686-installer-latest
 
 livecd/bootargs: dokeymap
-livecd/cdtar: /usr/lib/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
+livecd/cdtar: /usr/share/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
 livecd/fsscript: @REPO_DIR@/releases/latest/scripts/livecd.sh
 livecd/fstype: squashfs
 livecd/gk_mainargs: --lvm --dmraid --mdadm --makeopts=-j8
 livecd/iso: livecd-i686-installer-latest.iso
 livecd/type: gentoo-release-livecd
-livecd/volid: Gentoo Linux latest x86 LiveCD
+livecd/volid: Gentoo x86 LiveCD latest
 livecd/xdm: gdm
 livecd/xsession: xfce
 
@@ -30,7 +30,6 @@ boot/kernel/gentoo/packages:
 	media-sound/alsa-utils
 #	net-dialup/fcdsl
 #	net-dialup/fritzcapi
-	net-dialup/globespan-adsl
 ### Compile failure w/ 2.6.24
 #	net-dialup/slmodem
 	net-misc/br2684ctl

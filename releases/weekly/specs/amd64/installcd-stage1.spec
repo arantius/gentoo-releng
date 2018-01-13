@@ -1,10 +1,11 @@
 subarch: amd64
-version_stamp: 20161109.zfs
+version_stamp: 20180113.zfs
 target: livecd-stage1
 rel_type: default
-profile: default/linux/amd64/13.0/no-multilib
+profile: default/linux/amd64/17.0/no-multilib
 snapshot: latest
 source_subpath: default/stage3-amd64-latest
+compression_mode: pixz_x
 portage_confdir: /root/releng/releases/weekly/portage/isos
 
 livecd/use:
@@ -46,6 +47,7 @@ livecd/packages:
 	net-dialup/mingetty
 	net-dialup/pptpclient
 	net-dialup/rp-pppoe
+	net-fs/cifs-utils
 	net-fs/nfs-utils
 	net-irc/irssi
 	net-misc/dhcpcd

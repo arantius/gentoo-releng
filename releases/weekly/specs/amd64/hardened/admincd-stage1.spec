@@ -2,14 +2,17 @@ subarch: amd64
 version_stamp: latest
 target: livecd-stage1
 rel_type: hardened
-profile: hardened/linux/amd64
+profile: default/linux/amd64/17.0/hardened
 snapshot: latest
 source_subpath: hardened/stage3-amd64-hardened-latest
+compression_mode: pixz_x
 portage_confdir: @REPO_DIR@/releases/weekly/portage/isos
 
 livecd/use:
+	caps
 	deprecated
 	fbcon
+	filecaps
 	ipv6
 	livecd
 	loop-aes
@@ -42,7 +45,6 @@ livecd/packages:
 	app-arch/mt-st
 	app-arch/p7zip
 	app-arch/pbzip2
-	app-arch/rar
 	app-arch/tar
 	app-arch/unrar
 	app-arch/unzip
@@ -60,6 +62,7 @@ livecd/packages:
 	app-editors/hexcurse
 	app-editors/hexedit
 	app-editors/mg
+	app-editors/nano
 	app-editors/vim
 	app-emacs/ebuild-mode
 	app-emulation/cloud-init
@@ -69,7 +72,6 @@ livecd/packages:
 	app-misc/pax-utils
 	app-misc/screen
 	app-misc/tmux
-	app-misc/vlock
 	app-portage/eix
 	app-portage/gentoolkit
 	app-portage/mirrorselect
@@ -109,7 +111,6 @@ livecd/packages:
 	net-misc/ndisc6
 	net-misc/ntp
 	net-misc/openssh
-	net-misc/openvpn
 	net-misc/rdate
 	net-misc/rsync
 	net-misc/telnet-bsd
@@ -119,6 +120,7 @@ livecd/packages:
 	net-proxy/dante
 #	net-proxy/ntlmaps
 	net-proxy/tsocks
+	net-vpn/openvpn
 	net-wireless/b43-fwcutter
 ### Masked (~amd64)
 #	net-wireless/bcm43xx-fwcutter
@@ -126,7 +128,6 @@ livecd/packages:
 	net-wireless/rfkill
 	net-wireless/wireless-tools
 	net-wireless/wpa_supplicant
-	sys-apps/apmd
 	sys-apps/arrayprobe
 	sys-apps/acl
 	sys-apps/attr
@@ -177,9 +178,11 @@ livecd/packages:
 	sys-fs/btrfs-progs
 	sys-fs/cryptsetup
 	sys-fs/ddrescue
+	sys-fs/dislocker
 	sys-fs/dmraid
 	sys-fs/dosfstools
 	sys-fs/e2fsprogs
+	sys-fs/exfat-utils
 	sys-fs/ext3grep
 	sys-fs/extundelete
 	sys-fs/f2fs-tools

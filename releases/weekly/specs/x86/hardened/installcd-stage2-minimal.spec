@@ -7,16 +7,16 @@ snapshot: latest
 source_subpath: hardened/livecd-stage1-x86-hardened-latest
 
 livecd/bootargs: dokeymap
-livecd/cdtar: /usr/lib/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
+livecd/cdtar: /usr/share/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
 livecd/fstype: squashfs
 livecd/gk_mainargs: --lvm --dmraid --mdadm --makeopts=-j8
 livecd/iso: install-x86-minimal-latest.iso
 livecd/type: gentoo-release-minimal
-livecd/volid: Gentoo Linux x86 latest
+livecd/volid: Gentoo x86 latest
 
 boot/kernel: gentoo
 
-boot/kernel/gentoo/sources: hardened-sources
+boot/kernel/gentoo/sources: gentoo-sources
 boot/kernel/gentoo/config: @REPO_DIR@/releases/weekly/kconfig/x86/hardened/installcd-2.6.38.config
 boot/kernel/gentoo/use:
 	-*
@@ -78,7 +78,6 @@ boot/kernel/gentoo/packages:
 	media-libs/alsa-oss
 	media-sound/alsa-utils
 	net-dialup/slmodem
-	net-dialup/globespan-adsl
 	net-wireless/hostap-utils
 #	net-dialup/fritzcapi
 #	net-dialup/fcdsl

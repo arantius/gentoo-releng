@@ -2,7 +2,7 @@ subarch: i686
 version_stamp: installer-latest
 target: livecd-stage1
 rel_type: default
-profile: default/linux/x86/13.0/desktop
+profile: default/linux/x86/17.0/desktop
 snapshot: latest
 source_subpath: default/stage3-i686-desktop-latest
 livecd/use:
@@ -28,7 +28,6 @@ livecd/packages:
 	app-editors/vim
 	app-misc/mc
 	app-misc/screen
-	app-misc/vlock
 ### Removed for space reasons
 #	app-office/openoffice-bin
 	app-portage/gentoolkit
@@ -84,7 +83,6 @@ livecd/packages:
 	net-wireless/wpa_supplicant
 	net-wireless/zd1201-firmware
 	net-wireless/zd1211-firmware
-	sys-apps/apmd
 	sys-apps/ethtool
 	sys-apps/fxload
 	sys-apps/hdparm

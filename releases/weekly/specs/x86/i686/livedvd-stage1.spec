@@ -2,7 +2,7 @@ subarch: i686
 version_stamp: installer-latest
 target: livecd-stage1
 rel_type: default
-profile: default/linux/x86/13.0/desktop
+profile: default/linux/x86/17.0/desktop
 snapshot: latest
 source_subpath: default/stage3-i686-desktop-latest
 livecd/use:
@@ -179,7 +179,6 @@ livecd/packages:
 	net-wireless/zd1201-firmware
 	net-wireless/zd1211-firmware
 	rox-base/rox
-	sys-apps/apmd
 	sys-apps/dmidecode
 	sys-apps/ethtool
 	sys-apps/fxload

@@ -5,6 +5,7 @@ rel_type: hardened
 profile: hardened/linux/x86
 snapshot: latest
 source_subpath: hardened/stage3-x86-hardened-latest
+compression_mode: pixz_x
 livecd/use:
 	-*
 	deprecated
@@ -33,7 +34,6 @@ livecd/packages:
 	app-crypt/gnupg
 	app-editors/mg
 	app-misc/screen
-	app-misc/vlock
 	app-portage/mirrorselect
 	app-text/wgetpaste
 	media-gfx/fbgrab
@@ -59,7 +59,6 @@ livecd/packages:
 	net-wireless/wpa_supplicant
 	net-wireless/zd1201-firmware
 	net-wireless/zd1211-firmware
-	sys-apps/apmd
 	sys-apps/ethtool
 	sys-apps/fxload
 	sys-apps/hdparm

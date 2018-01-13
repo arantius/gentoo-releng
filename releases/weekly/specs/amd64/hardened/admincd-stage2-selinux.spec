@@ -2,23 +2,22 @@ subarch: amd64
 version_stamp: latest-selinux
 target: livecd-stage2
 rel_type: hardened
-profile: hardened/linux/amd64/selinux
+profile: default/linux/amd64/17.0/hardened/selinux
 snapshot: latest
 source_subpath: hardened/livecd-stage1-amd64-latest-selinux
 portage_confdir: @REPO_DIR@/releases/weekly/portage/isos
 
 livecd/bootargs: dokeymap
-livecd/cdtar: /usr/lib/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
+livecd/cdtar: /usr/share/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
 livecd/fstype: squashfs
 livecd/gk_mainargs: --lvm --dmraid --mdadm --makeopts=-j8
 livecd/iso: admincd-amd64-latest.iso
 livecd/type: gentoo-release-minimal
-livecd/volid: Gentoo Linux Admin CD latest
-livecd/rcdel: keymaps|boot
+livecd/volid: Gentoo amd64 AdminCD latest
 
 boot/kernel: gentoo
 
-boot/kernel/gentoo/sources: hardened-sources
+boot/kernel/gentoo/sources: gentoo-sources
 boot/kernel/gentoo/config: @REPO_DIR@/releases/weekly/kconfig/amd64/admincd-4.4.8-r1-selinux.config
 boot/kernel/gentoo/use:
 	-*
@@ -80,7 +79,6 @@ boot/kernel/gentoo/packages:
 	app-accessibility/espeakup
 	media-libs/alsa-oss
 	media-sound/alsa-utils
-	net-dialup/globespan-adsl
 
 	sys-apps/pcmciautils
 	sys-kernel/linux-firmware

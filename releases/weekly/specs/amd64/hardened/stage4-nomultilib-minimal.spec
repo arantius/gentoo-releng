@@ -2,7 +2,7 @@ subarch: amd64
 target: stage4
 version_stamp: hardened+minimal-nomultilib-latest
 rel_type: hardened
-profile: hardened/linux/amd64/no-multilib
+profile: default/linux/amd64/17.0/no-multilib/hardened
 snapshot: latest
 source_subpath: hardened/stage3-amd64-hardened+nomultilib-latest
 portage_confdir: @REPO_DIR@/releases/weekly/portage/cloud-stages
@@ -36,15 +36,15 @@ stage4/rcadd:
 	sshd|default
 
 boot/kernel: gentoo
-boot/kernel/gentoo/sources: hardened-sources
-boot/kernel/gentoo/config: @REPO_DIR@/releases/weekly/kconfig/amd64/cloud-amd64-hardened.config
+boot/kernel/gentoo/sources: gentoo-sources
+boot/kernel/gentoo/config: @REPO_DIR@/releases/weekly/kconfig/amd64/cloud-amd64-gentoo.config
 boot/kernel/gentoo/extraversion: openstack
 boot/kernel/gentoo/gk_kernargs: --all-ramdisk-modules
 
 # all of the cleanup...
 stage4/unmerge:
 	sys-kernel/genkernel
-	sys-kernel/hardened-sources
+	sys-kernel/gentoo-sources
 
 stage4/empty:
 	/root/.ccache

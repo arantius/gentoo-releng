@@ -8,17 +8,16 @@ source_subpath: hardened/livecd-stage1-x86-latest
 portage_confdir: @REPO_DIR@/releases/weekly/portage/isos
 
 livecd/bootargs: dokeymap
-livecd/cdtar: /usr/lib/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
+livecd/cdtar: /usr/share/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
 livecd/fstype: squashfs
 livecd/gk_mainargs: --lvm --dmraid --mdadm --makeopts=-j8
 livecd/iso: admincd-x86-latest.iso
 livecd/type: gentoo-release-minimal
-livecd/volid: Gentoo Linux Admin CD latest
-livecd/rcdel: keymaps|boot
+livecd/volid: Gentoo x86 AdminCD latest
 
 boot/kernel: gentoo
 
-boot/kernel/gentoo/sources: hardened-sources
+boot/kernel/gentoo/sources: gentoo-sources
 boot/kernel/gentoo/config: @REPO_DIR@/releases/weekly/kconfig/x86/admincd-3.18.9.config
 boot/kernel/gentoo/use:
 	-*
@@ -80,7 +79,6 @@ boot/kernel/gentoo/packages:
 	app-accessibility/espeakup
 	media-libs/alsa-oss
 	media-sound/alsa-utils
-	net-dialup/globespan-adsl
 
 	sys-apps/pcmciautils
 	sys-kernel/linux-firmware

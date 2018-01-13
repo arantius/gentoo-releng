@@ -2,19 +2,18 @@ subarch: x86
 version_stamp: latest
 target: livecd-stage2
 rel_type: default
-profile: default/linux/x86/13.0
+profile: default/linux/x86/17.0
 snapshot: latest
 source_subpath: default/livecd-stage1-x86-latest
 portage_confdir: @REPO_DIR@/releases/weekly/portage/isos
 
 livecd/bootargs: dokeymap
-livecd/cdtar: /usr/lib/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
+livecd/cdtar: /usr/share/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
 livecd/fstype: squashfs
 livecd/gk_mainargs: --lvm --dmraid --mdadm --makeopts=-j8
 livecd/iso: install-x86-minimal-latest.iso
 livecd/type: gentoo-release-minimal
-livecd/volid: Gentoo Linux x86 latest
-livecd/rcdel: keymaps|boot
+livecd/volid: Gentoo x86 latest
 
 boot/kernel: gentoo
 
@@ -80,7 +79,6 @@ boot/kernel/gentoo/packages:
 	app-accessibility/espeakup
 	media-libs/alsa-oss
 	media-sound/alsa-utils
-	net-dialup/globespan-adsl
 	net-wireless/hostap-utils
 
 	sys-apps/pcmciautils
