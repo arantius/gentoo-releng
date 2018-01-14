@@ -78,8 +78,8 @@ boot/kernel/gentoo/use:
 	usb
 
 boot/kernel/gentoo/packages:
-	=sys-kernel/spl-0.7.3
-	=sys-fs/zfs-0.7.3
+	=sys-kernel/spl-0.7.5
+	=sys-fs/zfs-0.7.5-r1
 ### These need to be added for software speech.
 	app-accessibility/espeakup
 	media-libs/alsa-oss

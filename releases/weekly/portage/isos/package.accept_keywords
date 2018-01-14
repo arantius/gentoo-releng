@@ -1,10 +1,9 @@
 # required by zfs (argument)
-=sys-fs/zfs-0.7.3 **
-# required by sys-fs/zfs-0.7.3
+=sys-fs/zfs-0.7.5-r1 **
+# required by sys-fs/zfs-0.7.5-r1
 # required by zfs (argument)
-=sys-fs/zfs-kmod-0.7.3 **
-# required by sys-fs/zfs-kmod-0.7.3
-# required by sys-fs/zfs-0.7.3
+=sys-fs/zfs-kmod-0.7.5 **
+# required by sys-fs/zfs-kmod-0.7.5
+# required by sys-fs/zfs-0.7.5-r1
 # required by zfs (argument)
-=sys-kernel/spl-0.7.3 **
-
+=sys-kernel/spl-0.7.5 **
