@@ -36,9 +36,9 @@ livecd/packages:
 	app-arch/unzip
 	app-crypt/gnupg
 	app-editors/mg
+	app-editors/nano
 	app-editors/vim
 	app-misc/screen
-	app-misc/vlock
 	app-portage/mirrorselect
 	app-text/wgetpaste
 	media-gfx/fbgrab
@@ -67,7 +67,6 @@ livecd/packages:
 	net-wireless/rfkill
 	net-wireless/wireless-tools
 	net-wireless/wpa_supplicant
-	sys-apps/apmd
 	sys-apps/busybox
 	sys-apps/dmidecode
 	sys-apps/ethtool
