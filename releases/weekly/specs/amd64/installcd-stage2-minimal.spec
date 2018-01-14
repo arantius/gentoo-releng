@@ -8,7 +8,7 @@ source_subpath: default/livecd-stage1-amd64-20180113.zfs
 portage_confdir: /root/releng/releases/weekly/portage/isos
 
 livecd/bootargs: dokeymap
-livecd/cdtar: /usr/share/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
+livecd/cdtar: /usr/lib64/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
 livecd/fstype: squashfs
 livecd/gk_mainargs: --lvm --dmraid --mdadm --makeopts=-j8
 livecd/iso: install-amd64-minimal-20180113.zfs.iso

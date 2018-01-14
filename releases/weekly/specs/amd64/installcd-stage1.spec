@@ -5,7 +5,6 @@ rel_type: default
 profile: default/linux/amd64/17.0/no-multilib
 snapshot: latest
 source_subpath: default/stage3-amd64-latest
-compression_mode: pixz_x
 portage_confdir: /root/releng/releases/weekly/portage/isos
 
 livecd/use:
